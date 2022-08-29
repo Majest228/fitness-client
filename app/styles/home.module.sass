@@ -1,0 +1,189 @@
+@import '_variables.sass'
+.home
+	background: $bg
+	z-index: 999
+.simulatorsForHouse
+.simulatorsForHouseTitle
+	margin-top: 120px
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 700
+	font-size: 30px
+	line-height: 110%
+	color: $darkGrey
+.container
+	max-width: 1410px
+	margin: 0 auto
+.simulatorsForHouseTop
+	margin-top: 30px
+	display: flex
+.simulatorsForHouseTopLeft
+	display: flex
+
+.linkBig
+	position: relative
+	margin-right: 30px
+	background: #F0F1F7
+	border-radius: 6px
+	width: 330px
+	height: 430px
+	background-image: url('../assets/forHouse1.png')
+	cursor: pointer
+
+	transition: opacity 1s ease-out 0.5s
+	&:hover::before
+		content: ''
+		position: absolute
+		width: 330px
+		height: 430px
+		background: rgba(0, 0, 0, 0.2)
+		border-radius: 6px
+
+.linkContent
+	a
+		display: block
+		font-family: 'Inter'
+		font-style: normal
+		font-weight: 800
+		font-size: 20px
+		line-height: 120%
+		color: $darkGrey
+		padding-top: 36px
+		padding-left: 30px
+
+.simulatorsForHouseTopCenter
+	display: flex
+	flex-wrap: wrap
+
+.linkCenter
+	position: relative
+	background: #F0F1F7
+	border-radius: 6px
+	width: 330px
+	height: 200px
+	background-image: url('../assets/test.png')
+	background-repeat: no-repeat
+	background-position: right
+	cursor: pointer
+	&:hover::before
+		content: ''
+		position: absolute
+		width: 330px
+		height: 200px
+		background: rgba(0, 0, 0, 0.2)
+		border-radius: 6px
+	&:nth-child(1)
+		margin-right: 30px
+	&:nth-child(3)
+		margin-right: 30px
+.simulatorsForHouseBottom
+.simulatorsForHouseBottomContent
+	display: flex
+.linkBottomBlock
+	display: block
+	margin-top: 30px
+	position: relative
+	background: #F0F1F7
+	border-radius: 6px
+	min-width: 330px
+	height: 280px
+	background-image: url('../assets/test.png')
+	background-repeat: no-repeat
+	background-position: bottom right
+	cursor: pointer
+	&:nth-child(1)
+		margin-right: 30px
+	&:nth-child(2)
+		margin-right: 30px
+	&:nth-child(3)
+		margin-right: 30px
+	&:hover::before
+		content: ''
+		position: absolute
+		width: 330px
+		height: 280px
+		background: rgba(0, 0, 0, 0.2)
+		border-radius: 6px
+
+.linkBottomContent
+	a
+		display: block
+		font-family: 'Inter'
+		font-style: normal
+		font-weight: 800
+		font-size: 20px
+		line-height: 120%
+		color: $darkGrey
+		padding-top: 36px
+		padding-left: 30px
+
+.simulatorsForFitness
+	h3
+		font-family: 'Inter'
+		font-style: normal
+		font-weight: 700
+		font-size: 30px
+		line-height: 110%
+		color: $darkGrey
+.simulatorsForFitnessTop
+	display: flex
+.simulatorsForFitnessTopBig
+	cursor: pointer
+	min-width: 690px
+	height: 280px
+	background: #0D1012
+	border-radius: 6px
+	margin-top: 30px
+	background-repeat: no-repeat
+	background-position: right bottom
+	background-image: url('../assets/finess1.png')
+	margin-right: 30px
+	h3
+		padding-top: 36px
+		padding-left: 30px
+		font-family: 'Inter'
+		font-style: normal
+		font-weight: 800
+		font-size: 20px
+		width: 249px
+		line-height: 120%
+		color: #ffffff
+.simulatorsForFitnessBottom
+	display: flex
+.action
+.actionLinkActive
+	text-decoration: none
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 700
+	font-size: 30px
+	line-height: 110%
+	color: $darkGrey
+.actionLink
+	text-decoration: none
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 800
+	font-size: 20px
+	line-height: 120%
+	color: #828282
+.actionButton
+	margin-top: 30px
+	margin-bottom: 120px
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 700
+	font-size: 14px
+	line-height: 17px
+	color: $red
+	padding: 12px 20px 13px
+	border: 1px solid #F53B49
+	border-radius: 4px
+	cursor: pointer
+	transition: all 0.8s
+	&:hover
+		background: #F53B49
+		color: #ffffff
+
+.idea
+	background: #1A1A25
