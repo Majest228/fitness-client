@@ -1,12 +1,16 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import ActionSlider from '../../components/ActionSlider/ActionSlider'
 import CardItem from '../../components/CardItem/CardItem'
+import Guide from '../../components/Guide/GuideItem'
+import GuideList from '../../components/Guide/GuideList'
 import IdeaComponent from '../../components/IdeaComponent/IdeaComponent'
 import IntroSlider from '../../components/IntroSlider/IntroSlider'
 import PopularBrends from '../../components/PopularBrends/PopularBrends'
 import Button from '../../components/ui/Button/Button'
 import Header from '../../layouts/Header/Header'
 import styles from '../../styles/home.module.sass'
+import subscribe from '../../assets/subscribe.png'
 
 const Home = (): JSX.Element => {
 	return (
@@ -170,6 +174,27 @@ const Home = (): JSX.Element => {
 				<section className={styles.brends}>
 					<div className={styles.container}>
 						<PopularBrends />
+					</div>
+				</section>
+				<section className={styles.guide}>
+					<div className={styles.container}>
+						<GuideList />
+					</div>
+				</section>
+				<section className={styles.subscribe}>
+					<div className={styles.container}>
+						<div className={styles.subscribeContent}>
+							<div className={styles.subscribeContentImg}>
+								<Image src={subscribe} alt='SUB' />
+							</div>
+							<div className={styles.subscribeContentText}>
+								<p>
+									Станьте нашим партнером <span>и получите возможность</span>{' '}
+									представлять нашу продукцию в вашем регионе.
+								</p>
+								<Button br='white'>Стать партнером</Button>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>
